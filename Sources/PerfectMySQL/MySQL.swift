@@ -14,7 +14,7 @@ import mysqlclient
 
 /// Provide access to MySQL connector functions
 public final class MySQL {
-	private static var initOnce: Bool = {
+	public static var initOnce: Bool = {
 		mysql_server_init(0, nil, nil)
 		return true
 	}()
